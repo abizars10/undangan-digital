@@ -27,9 +27,6 @@
   min-height: 100vh;
   text-align: center;
 }
-.hero-text {
-  padding-top: 90%;
-}
 
 .hero h1,
 .hero h4,
@@ -39,7 +36,7 @@
 
 .hero h1 {
   font-family: "Sacramento", cursive;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .hero h4 {
@@ -48,4 +45,29 @@
 
 .hero p {
   font-size: 1.4rem;
+}
+
+.hero a {
+  border: 2px solid white;
+  padding: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-text {
+    padding-top: 95%;
+  }
+}
+@media screen and (max-width: 884px) {
+  .hero-text {
+    padding-top: 80%;
+  }
+}
+@media screen and (min-width: 884px) {
+  .hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
 }

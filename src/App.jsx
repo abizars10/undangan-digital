@@ -18,13 +18,15 @@ function App() {
         <main className="hero-text">
           <h4>WEDDING INVITATION</h4>
           <h1>FULAN & FULANAH</h1>
-          <h4>DEAR</h4>
-          <h2>{guestName ? `${decodeURIComponent(guestName.replace(/\+/g, " "))}` : " "}</h2>
-          <p>Kami akan melangsungkan resepsi pernikahan dalam : </p>
-          <Countdown />
+          <h4>01 Oktober 2025</h4>
+          <p>Kepada Yth :</p>
+          <h4>{guestName ? `${decodeURIComponent(guestName.replace(/\+/g, " "))}` : " "}</h4>
+          {/* <p>Kami akan melangsungkan resepsi pernikahan dalam : </p>
+          <Countdown /> */}
           <a href="#" className="btn">
             Lihat Undangan
           </a>
+          <p>* Mohon Maaf Apabila Ada Kesalahan Penulisan Nama/Gelar</p>
         </main>
       </section>
     </div>
